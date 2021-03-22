@@ -6,6 +6,8 @@ using UnityEngine.Networking;
 public class APILoad : MonoBehaviour
 {
 
+    //lol moment i can't set this up
+
     // Start is called before the first frame update
     void Start()
     {
