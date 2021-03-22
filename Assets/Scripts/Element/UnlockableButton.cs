@@ -29,7 +29,6 @@ public class UnlockableButton : MonoBehaviour
 
             if(itemElement.id == thisElement.id)
             {
-                // Debug.Log(itemElement.name);
                 if(!item.unlocked)
                 {
                     button.GetComponent<Image>().color = new Color(0f,0f,0f,1f);

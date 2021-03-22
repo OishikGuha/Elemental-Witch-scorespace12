@@ -30,12 +30,13 @@ public class ElementManager : MonoBehaviour
 
             if(itemElement.id == objElement.id)
             {
-                Debug.Log(itemElement.name);
-                item.unlocked = true;
-            }
-            else
-            {
-                Debug.Log("aaaameonfkaewnfoawenfoiawehnfoiursendpgoiaenwopinaoiwenpfoigano");
+                if(!item.unlocked)
+                {
+                    Debug.Log(itemElement.name);
+                    item.unlocked = true;
+                    Score.score++;
+                    AudioManager.PlaySFX();
+                }
             }
         }
     }
